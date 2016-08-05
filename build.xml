@@ -5,4 +5,15 @@
 <project name="io.github.nbupsource" default="netbeans" basedir=".">
     <description>Builds, tests, and runs the project io.github.nbupsource.</description>
     <import file="nbproject/build-impl.xml"/>
+    <target name="netbeans-extra" depends="init">
+      <mkdir dir="${cluster}/modules/ext"/>
+      <copy todir="${cluster}/modules/ext">
+        <fileset dir="external">
+          <include name="httpcore-4.4.5.jar"/>
+          <include name="httpclient-4.5.2.jar"/>
+          <include name="httpmime-4.5.2.jar"/>
+          <include name="commons-logging-1.2.jar"/>
+        </fileset>
+      </copy>        
+    </target>
 </project>
