@@ -41,7 +41,7 @@ public final class ViewReviewsAction implements ActionListener {
     private static final String REVIEWS_SUBPATH = "/~rpc/getRevisionsList";
 
     private static final String DEFAULT_USER = "maidaniuk";
-    private static final String DEFAULT_PASS = "******";
+    private static final String DEFAULT_PASS = "Snickers23!";
 
     @Override
     public void actionPerformed(ActionEvent e) {
